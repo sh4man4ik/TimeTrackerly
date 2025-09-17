@@ -1,7 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TimeTrackerly from './pages/TimeTrackerly/TimeTrackerly';
+import About from './pages/About/About';
+import FullHistory from './pages/FullHistory/FullHistory';
+import Favorites from './pages/Favorites/Favorites';
+
 function App() {
 	return (
 		<>
-			<h1 className="font-bold">TimeTracker</h1>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<TimeTrackerly></TimeTrackerly>}></Route>
+					<Route path="/about" element={<About></About>}></Route>
+					<Route path="/fullhistory" element={<FullHistory></FullHistory>}></Route>
+					<Route path="/favorites" element={<Favorites></Favorites>}></Route>
+				</Routes>
+			</BrowserRouter>
 		</>
 	);
 }
