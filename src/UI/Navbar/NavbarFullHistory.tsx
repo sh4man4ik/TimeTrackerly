@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function NavbarFullHisotry() {
+function NavbarFullHistory() {
 	const navigate = useNavigate();
 
 	let handleClick = () => {
@@ -13,10 +13,10 @@ function NavbarFullHisotry() {
 				className="text-xl lg:text-4xl mb-1 lg:mb-0 cursor-pointer w-fit hover:underline hover:underline-offset-3"
 				onClick={handleClick}
 			>
-				Full hisotry
+				Full History
 			</div>
 		</>
 	);
 }
 
-export default NavbarFullHisotry;
+export default NavbarFullHistory;

@@ -1,5 +1,5 @@
 import NavbarAbout from '../UI/Navbar/NavbarAbout';
-import NavbarFullHisotry from '../UI/Navbar/NavbarFullHistory';
+import NavbarFullHistory from '../UI/Navbar/NavbarFullHistory';
 import NavbarFavorites from '../UI/Navbar/NavbarFavorites';
 
 function NavbarItems() {
@@ -7,7 +7,7 @@ function NavbarItems() {
 		<>
 			<ul className="grid lg:flex lg:gap-[44px]">
 				<NavbarAbout></NavbarAbout>
-				<NavbarFullHisotry></NavbarFullHisotry>
+				<NavbarFullHistory></NavbarFullHistory>
 				<NavbarFavorites></NavbarFavorites>
 			</ul>
 		</>
