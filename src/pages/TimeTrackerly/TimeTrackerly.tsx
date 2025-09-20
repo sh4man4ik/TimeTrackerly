@@ -1,7 +1,9 @@
+import Navbar from '../../modules/Navbar';
+
 function TimeTrackerly() {
 	return (
 		<>
-			<h1>TimeTrackerly</h1>
+			<Navbar></Navbar>
 		</>
 	);
 }

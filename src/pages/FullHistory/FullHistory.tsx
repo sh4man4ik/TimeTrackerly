@@ -1,7 +1,9 @@
+import Navbar from '../../modules/Navbar';
+
 function FullHistory() {
 	return (
 		<>
-			<h1>FullHistory</h1>
+			<Navbar></Navbar>
 		</>
 	);
 }

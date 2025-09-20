@@ -1,7 +1,9 @@
+import Navbar from '../../modules/Navbar';
+
 function About() {
 	return (
 		<>
-			<h1>About</h1>
+			<Navbar></Navbar>
 		</>
 	);
 }

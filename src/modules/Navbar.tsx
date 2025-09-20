@@ -1,0 +1,32 @@
+import { useState } from 'react';
+import NavbarTitle from '../UI/Navbar/NavbarTitle';
+import NavbarItems from '../components/NavbarItems';
+import NavbarButton from '../UI/Navbar/NavbarButton';
+
+function Navbar() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	let handleMenu = () => {
+		setIsOpen(!isOpen);
+	};
+
+	return (
+		<>
+			<div className="bg-[#f8f8ff] flex flex-wrap justify-between mx-auto pt-[14px] pb-[14px] pl-[19px] pr-[19px] lg:pt-[28px] lg:pb-[28px] lg:pl-[38px] lg:pr-[38px] shadow-lg/4">
+				<NavbarTitle></NavbarTitle>
+
+				<div onClick={handleMenu}>
+					<NavbarButton></NavbarButton>
+				</div>
+
+				<div className={`${isOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto`}>
+					<div className="flex flex-col mt-2 lg:mt-0 lg:flex-row lg:space-x-8">
+						<NavbarItems></NavbarItems>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+}
+
+export default Navbar;

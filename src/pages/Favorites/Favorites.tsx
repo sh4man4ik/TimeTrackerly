@@ -1,7 +1,9 @@
+import Navbar from '../../modules/Navbar';
+
 function Favorites() {
 	return (
 		<>
-			<h1>Favorites</h1>
+			<Navbar></Navbar>
 		</>
 	);
 }
