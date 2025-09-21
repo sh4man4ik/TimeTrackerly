@@ -1,4 +1,4 @@
-import Navbar from '../../modules/Navbar';
+import Navbar from '../modules/Navbar';
 
 function TimeTrackerly() {
 	return (

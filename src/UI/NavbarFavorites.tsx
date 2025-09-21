@@ -10,7 +10,7 @@ function NavbarFavorites() {
 	return (
 		<>
 			<div
-				className="text-xl lg:text-4xl cursor-pointer w-fit hover:underline hover:underline-offset-3"
+				className="text-xl lg:text-4xl cursor-pointer w-fit hover:underline hover:underline-offset-3 text-black"
 				onClick={handleClick}
 			>
 				Favorites

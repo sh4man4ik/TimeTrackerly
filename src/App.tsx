@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TimeTrackerly from './pages/TimeTrackerly/TimeTrackerly';
-import About from './pages/About/About';
-import FullHistory from './pages/FullHistory/FullHistory';
-import Favorites from './pages/Favorites/Favorites';
+import TimeTrackerly from './pages/TimeTrackerly';
+import About from './pages/About';
+import FullHistory from './pages/FullHistory';
+import Favorites from './pages/Favorites';
 
 function App() {
 	return (

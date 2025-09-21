@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import NavbarTitle from '../UI/Navbar/NavbarTitle';
+import NavbarTitle from '../UI/NavbarTitle';
 import NavbarItems from '../components/NavbarItems';
-import NavbarButton from '../UI/Navbar/NavbarButton';
+import NavbarButton from '../UI/NavbarButton';
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ function Navbar() {
 				</div>
 
 				<div className={`${isOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto`}>
-					<div className="flex flex-col mt-2 lg:mt-0 lg:flex-row lg:space-x-8">
+					<div className="flex flex-col mt-[8px] lg:mt-[0px] lg:flex-row">
 						<NavbarItems></NavbarItems>
 					</div>
 				</div>
