@@ -1,6 +1,6 @@
-import NavbarAbout from '../UI/NavbarAbout';
-import NavbarFullHistory from '../UI/NavbarFullHistory';
-import NavbarFavorites from '../UI/NavbarFavorites';
+import NavbarAbout from '../../UI/Navbar/NavbarAbout';
+import NavbarFullHistory from '../../UI/Navbar/NavbarFullHistory';
+import NavbarFavorites from '../../UI/Navbar/NavbarFavorites';
 
 function NavbarItems() {
 	return (

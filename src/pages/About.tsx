@@ -1,6 +1,6 @@
-import Navbar from '../modules/Navbar';
-import AboutTitle from '../UI/AboutTitle';
-import Cards from '../modules/Cards';
+import Navbar from '../modules/Navbar/Navbar';
+import AboutTitle from '../UI/AboutPage/AboutTitle';
+import Cards from '../modules/AboutPage/Cards';
 
 function About() {
 	return (

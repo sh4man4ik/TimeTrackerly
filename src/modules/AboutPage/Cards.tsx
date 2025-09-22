@@ -1,4 +1,4 @@
-import AboutCard from '../components/AboutCard';
+import AboutCard from '../../components/AboutPage/AboutCard';
 
 function Cards() {
 	let openGitHubRepo = () => {
