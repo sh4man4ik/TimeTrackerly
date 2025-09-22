@@ -6,7 +6,7 @@ import NavbarButton from '../UI/NavbarButton';
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	let handleMenu = () => {
+	let handleClick = () => {
 		setIsOpen(!isOpen);
 	};
 
@@ -15,7 +15,7 @@ function Navbar() {
 			<div className="bg-[#f8f8ff] flex flex-wrap items-center justify-between mx-auto pt-[14px] pb-[14px] pl-[19px] pr-[19px] lg:pt-[28px] lg:pb-[28px] lg:pl-[38px] lg:pr-[38px] shadow-lg/4">
 				<NavbarTitle></NavbarTitle>
 
-				<div onClick={handleMenu}>
+				<div onClick={handleClick}>
 					<NavbarButton></NavbarButton>
 				</div>
 
