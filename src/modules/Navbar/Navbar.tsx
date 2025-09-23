@@ -3,11 +3,13 @@ import NavbarTitle from '../../UI/Navbar/NavbarTitle';
 import NavbarItems from '../../components/Navbar/NavbarItems';
 import NavbarButton from '../../UI/Navbar/NavbarButton';
 
-function Navbar() {
+function Navbar(props: any) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	let handleClick = () => {
-		setIsOpen(!isOpen);
+		if (props.isActivityOpen == false) {
+			setIsOpen(!isOpen);
+		}
 	};
 
 	return (
@@ -16,7 +18,7 @@ function Navbar() {
 				<NavbarTitle></NavbarTitle>
 
 				<div onClick={handleClick}>
-					<NavbarButton></NavbarButton>
+					<NavbarButton isActivityOpen={props.isActivityOpen}></NavbarButton>
 				</div>
 
 				<div className={`${isOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto`}>

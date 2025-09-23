@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
-function NavbarButton() {
+function NavbarButton(props: any) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	let handleClick = () => {
-		setIsOpen(!isOpen);
+		if (props.isActivityOpen == false) {
+			setIsOpen(!isOpen);
+		}
 	};
 
 	return (
