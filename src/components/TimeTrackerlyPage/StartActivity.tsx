@@ -1,5 +1,5 @@
 import StartActivityTitle from '../../UI/TimeTrackerlyPage/StartActivityTitle';
-import PlusButton from '../../UI/TimeTrackerlyPage/PlusButton';
+import PlusButton from '../../UI/PlusButton';
 
 function StartActivity() {
 	return (
