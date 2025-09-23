@@ -3,7 +3,9 @@ import PlusButton from '../../UI/PlusButton';
 
 function StartActivity(props: any) {
 	let openActivity = () => {
-		props.setIsActivityOpen(true);
+		if (props.isActivityOpen == false) {
+			props.setIsActivityOpen(true);
+		}
 	};
 
 	return (

@@ -1,7 +1,7 @@
 function CrossButton() {
 	return (
 		<>
-			<button className="bg-gradient-to-r from-[#7474BF]/80 to-[#348AC7]/80 hover:from-[#6b6bb0]/80 hover:to-[#3180b0]/80 rounded-[6px] lg:rounded-[12px] size-[27px] lg:size-[55px] text-xl lg:text-4xl font-bold text-[#F8F8FF] flex items-center justify-center pb-[3px] lg:pb-[5px] cursor-pointer">
+			<button className="bg-gradient-to-r from-[#7474BF] to-[#348AC7] hover:from-[#6b6bb0] hover:to-[#3180b0] rounded-[6px] lg:rounded-[12px] size-[27px] lg:size-[55px] text-xl lg:text-4xl font-bold text-[#F8F8FF] flex items-center justify-center pb-[3px] lg:pb-[5px] cursor-pointer">
 				{'\u00D7'}
 			</button>
 		</>
