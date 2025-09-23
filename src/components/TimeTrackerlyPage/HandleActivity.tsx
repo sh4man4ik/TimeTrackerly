@@ -7,7 +7,7 @@ import HandleButton from '../../UI/TimeTrackerlyPage/HandleButton';
 function HandleActivity() {
 	return (
 		<>
-			<div className="flex items-center justify-between p-[10px] lg:p-[30px] relative flex items-center justify-center">
+			<div className="flex items-center justify-between p-[15px] lg:p-[30px] relative flex items-center justify-center">
 				<div className="justify-self-center">
 					<EnterActivity></EnterActivity>
 					<p className="text-xl lg:text-4xl text-center mt-[20px] lg:mt-[40px] mb-[20px] lg:mb-[40px]">or</p>
