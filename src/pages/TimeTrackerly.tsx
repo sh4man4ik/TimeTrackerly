@@ -9,7 +9,7 @@ function TimeTrackerly() {
 
 	return (
 		<>
-			<Navbar isActivityOpen={isActivityOpen}></Navbar>
+			<Navbar></Navbar>
 			<StartActivity setIsActivityOpen={setIsActivityOpen} isActivityOpen={isActivityOpen}></StartActivity>
 			<Activity isActivityOpen={isActivityOpen} setIsActivityOpen={setIsActivityOpen}></Activity>
 			<SevenDaysHistory></SevenDaysHistory>
