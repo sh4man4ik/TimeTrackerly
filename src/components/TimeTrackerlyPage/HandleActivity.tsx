@@ -3,7 +3,7 @@ import EnterActivity from '../../UI/TimeTrackerlyPage/EnterActivity';
 import SelectActivity from '../../UI/TimeTrackerlyPage/SelectActivity';
 import Warn from '../../UI/TimeTrackerlyPage/Warn';
 import HandleButton from '../../UI/TimeTrackerlyPage/HandleButton';
-import Timer from '../../UI/TimeTrackerlyPage/Timer';
+import Stopwatch from '../../UI/TimeTrackerlyPage/Stopwatch';
 import { useState } from 'react';
 
 function HandleActivity(props: any) {
@@ -41,7 +41,7 @@ function HandleActivity(props: any) {
 					</div>
 				) : (
 					<div className="w-full h-full">
-						<Timer isStarted={props.isStarted}></Timer>
+						<Stopwatch isStarted={props.isStarted}></Stopwatch>
 						<div onClick={closeActivity}>
 							<HandleButton text="STOP"></HandleButton>
 						</div>

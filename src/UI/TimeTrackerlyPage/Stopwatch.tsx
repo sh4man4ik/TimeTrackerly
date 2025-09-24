@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-function Timer(props: any) {
+function Stopwatch(props: any) {
 	let [elapsedTime, setElapsedTime] = useState(0);
 	let intervalRef: any = useRef(null);
 	let startTimeRef = useRef(0);
@@ -40,4 +40,4 @@ function Timer(props: any) {
 	);
 }
 
-export default Timer;
+export default Stopwatch;
