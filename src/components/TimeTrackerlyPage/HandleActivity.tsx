@@ -41,7 +41,7 @@ function HandleActivity(props: any) {
 					</div>
 				) : (
 					<div className="w-full h-full">
-						<Timer></Timer>
+						<Timer isStarted={props.isStarted}></Timer>
 						<div onClick={closeActivity}>
 							<HandleButton text="STOP"></HandleButton>
 						</div>
