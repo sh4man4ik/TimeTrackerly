@@ -1,15 +1,15 @@
 import HistoryTitle from '../../UI/HistoryTitle';
 import HistoryBlock from '../../UI/HistoryBlock';
 
-function SevenDaysHistory() {
+function FullHistoryBlock() {
 	return (
 		<>
 			<div className="mt-[45px] lg:mt-[90px]">
-				<HistoryTitle title={'7 days history'}></HistoryTitle>
-				<HistoryBlock historytype={'seven'}></HistoryBlock>
+				<HistoryTitle title={'Full history'}></HistoryTitle>
+				<HistoryBlock historytype={'full'}></HistoryBlock>
 			</div>
 		</>
 	);
 }
 
-export default SevenDaysHistory;
+export default FullHistoryBlock;
