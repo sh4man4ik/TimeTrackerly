@@ -11,7 +11,7 @@ function FavoritesList(props: any) {
 						{props.favoritesActivityList.map((activity: any, index: any) => (
 							<li
 								key={index}
-								className="flex items-start justify-between before:content-['•'] before:mr-2"
+								className="flex items-center justify-between before:content-['•'] before:mr-2"
 							>
 								<span className="flex-1 mr-[6px] lg:mr-[12px] w-fit wrap-anywhere">{activity}</span>
 								<div onClick={() => props.deleteTask(index)}>
