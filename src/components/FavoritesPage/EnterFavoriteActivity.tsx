@@ -31,7 +31,7 @@ function EnterFavoriteActivity(props: any) {
 						value={activityText}
 						onChange={(e) => handleChange(e)}
 						className="rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 p-[2px] lg:p-[8px] pl-[8px] lg:pl-[16px] pr-[43px] lg:pr-[86px] w-[100%] outline-none hover:from-[#6b6bb0]/20 hover:to-[#3180b0]/20 text-[black] placeholder-[#6B7280] h-[35px] lg:h-[70px]"
-						maxLength={50}
+						maxLength={100}
 						placeholder="Go to training..."
 					/>
 					<div className="absolute inset-y-0 right-0 flex items-center" onClick={addActivity}>
