@@ -6,6 +6,11 @@ function EnterFavoriteActivity() {
 	let [isError, setIsError] = useState(false);
 	let [activityText, setActivityText] = useState('');
 
+	let handleChange = (e: any) => {
+		setActivityText(e.target.value);
+		setIsError(false);
+	};
+
 	let addActivity = () => {
 		if (activityText.trim() == '') {
 			setIsError(true);
@@ -22,7 +27,7 @@ function EnterFavoriteActivity() {
 					<input
 						type="text"
 						value={activityText}
-						onChange={(e) => setActivityText(e.target.value)}
+						onChange={(e) => handleChange(e)}
 						className="rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 p-[2px] lg:p-[8px] pl-[8px] lg:pl-[16px] pr-[43px] lg:pr-[86px] w-[100%] outline-none hover:from-[#6b6bb0]/20 hover:to-[#3180b0]/20 text-[black] placeholder-[#6B7280] h-[35px] lg:h-[70px]"
 						maxLength={50}
 						placeholder="Go to training..."

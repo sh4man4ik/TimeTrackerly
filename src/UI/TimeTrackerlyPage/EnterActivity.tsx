@@ -1,11 +1,16 @@
 function EnterActivity(props: any) {
+	let handleOnChange = (e: any) => {
+		props.setIsError(2);
+		props.setEnterActivityValue(e.target.value);
+	};
+
 	return (
 		<>
 			<div className="grid text-xl lg:text-4xl">
 				<p className="pb-[6px] lg:pb-[12px]">Enter activity</p>
 				<input
 					type="text"
-					onChange={(e) => props.setEnterActivityValue(e.target.value)}
+					onChange={(e) => handleOnChange(e)}
 					className="rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF] to-[#348AC7] p-[2px] lg:p-[8px] pl-[8px] lg:pl-[16px] pr-[8px] lg:pr-[16px] w-[100%] max-w-[500px] outline-none hover:from-[#6b6bb0] hover:to-[#3180b0] text-[#F8F8FF] placeholder-[#D1D5DB]"
 					maxLength={50}
 					placeholder="Go to training..."

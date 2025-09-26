@@ -4,6 +4,7 @@ function SelectActivity(props: any) {
 	let [value, setValue] = useState('');
 
 	let handleChange = (e: any) => {
+		props.setIsError(2);
 		props.setSelectActivityValue(e.target.value);
 		setValue(e.target.value);
 	};

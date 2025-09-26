@@ -47,11 +47,15 @@ function HandleActivity(props: any) {
 							<EnterActivity
 								enterActivityValue={enterActivityValue}
 								setEnterActivityValue={setEnterActivityValue}
+								setIsError={setIsError}
 							></EnterActivity>
 							<p className="text-xl lg:text-4xl text-center mt-[20px] lg:mt-[40px] mb-[20px] lg:mb-[40px]">
 								or
 							</p>
-							<SelectActivity setSelectActivityValue={setSelectActivityValue}></SelectActivity>
+							<SelectActivity
+								setSelectActivityValue={setSelectActivityValue}
+								setIsError={setIsError}
+							></SelectActivity>
 							<div>{getWarnType(isError)}</div>
 							<div onClick={clickStart} className="w-auto">
 								<HandleButton text="START"></HandleButton>
