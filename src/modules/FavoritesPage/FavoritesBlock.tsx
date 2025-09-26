@@ -1,4 +1,4 @@
-import EnterFavoriteActivity from '../../UI/FavoritesPage/EnterFavoriteActivity';
+import EnterFavoriteActivity from '../../components/FavoritesPage/EnterFavoriteActivity';
 import FavoritesList from '../../components/FavoritesPage/FavoritesList';
 
 function FavoritesBlock() {

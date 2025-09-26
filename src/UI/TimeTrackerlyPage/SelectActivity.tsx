@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-function SelectActivity() {
-	let [color, setColor] = useState('');
+function SelectActivity(props: any) {
+	let [value, setValue] = useState('');
 
 	let handleChange = (e: any) => {
-		setColor(e.target.value);
+		props.setSelectActivityValue(e.target.value);
+		setValue(e.target.value);
 	};
 
 	return (
@@ -13,9 +14,9 @@ function SelectActivity() {
 				<p className="pb-[6px] lg:pb-[12px]">Select activity</p>
 
 				<select
-					className={`appearance-none rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF] to-[#348AC7] w-[100%] lg:max-w-[500px] p-[2px] lg:p-[8px] pl-[8px] lg:pl-[16px] pr-[8px] lg:pr-[16px] truncate outline-none hover:from-[#6b6bb0] focus:to-[#3180b0] cursor-pointer ${color == '' ? 'text-[#D1D5DB]' : 'text-[#F8F8FF]'}`}
+					className={`appearance-none rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF] to-[#348AC7] w-[100%] lg:max-w-[500px] p-[2px] lg:p-[8px] pl-[8px] lg:pl-[16px] pr-[8px] lg:pr-[16px] truncate outline-none hover:from-[#6b6bb0] focus:to-[#3180b0] cursor-pointer ${value == '' ? 'text-[#D1D5DB]' : 'text-[#F8F8FF]'}`}
 					onChange={(e) => handleChange(e)}
-					value={color}
+					value={value}
 				>
 					<option value="" disabled>
 						Select activity...
