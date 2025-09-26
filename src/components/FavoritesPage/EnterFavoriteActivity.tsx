@@ -7,7 +7,7 @@ function EnterFavoriteActivity() {
 	let [activityText, setActivityText] = useState('');
 
 	let addActivity = () => {
-		if (activityText == '') {
+		if (activityText.trim() == '') {
 			setIsError(true);
 		} else {
 			setIsError(false);

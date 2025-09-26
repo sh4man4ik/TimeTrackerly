@@ -13,9 +13,9 @@ function HandleActivity(props: any) {
 	let [selectActivityValue, setSelectActivityValue] = useState('');
 
 	let clickStart = () => {
-		if (enterActivityValue == '' && selectActivityValue == '') {
+		if (enterActivityValue.trim() == '' && selectActivityValue.trim() == '') {
 			setIsError(0);
-		} else if (enterActivityValue != '' && selectActivityValue != '') {
+		} else if (enterActivityValue.trim() != '' && selectActivityValue.trim() != '') {
 			setIsError(1);
 		} else {
 			setIsError(2);
