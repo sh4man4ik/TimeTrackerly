@@ -2,13 +2,14 @@ import { useState } from 'react';
 import PlusButton from '../../UI/PlusButton';
 import Warn from '../../UI/Warn';
 
-function EnterFavoriteActivity() {
+function EnterFavoriteActivity(props: any) {
 	let [isError, setIsError] = useState(false);
 	let [activityText, setActivityText] = useState('');
 
 	let handleChange = (e: any) => {
-		setActivityText(e.target.value);
 		setIsError(false);
+		setActivityText(e.target.value);
+		props.setNewActivity(activityText.trim());
 	};
 
 	let addActivity = () => {
@@ -16,6 +17,10 @@ function EnterFavoriteActivity() {
 			setIsError(true);
 		} else {
 			setIsError(false);
+
+			props.addTask();
+
+			setActivityText('');
 		}
 	};
 
