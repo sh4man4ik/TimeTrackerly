@@ -9,7 +9,6 @@ function EnterFavoriteActivity(props: any) {
 	let handleChange = (e: any) => {
 		setIsError(false);
 		setActivityText(e.target.value);
-		props.setNewActivity(activityText.trim());
 	};
 
 	let addActivity = () => {
@@ -17,9 +16,7 @@ function EnterFavoriteActivity(props: any) {
 			setIsError(true);
 		} else {
 			setIsError(false);
-
-			props.addTask();
-
+			props.addTask(activityText);
 			setActivityText('');
 		}
 	};

@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import EnterFavoriteActivity from '../../components/FavoritesPage/EnterFavoriteActivity';
 import FavoritesList from '../../components/FavoritesPage/FavoritesList';
 
 function FavoritesBlock() {
-	let [favoritesActivityList, setFavoritesActivityList] = useState(['eat', 'training', 'sleep']);
-	let [newActivity, setNewActivity] = useState('');
+	let [favoritesActivityList, setFavoritesActivityList] = useState<string[]>([]);
+	let [isFirstRender, setIsFirstRender] = useState(true);
 
-	let addTask = () => {
-		setFavoritesActivityList((f) => [...f, newActivity]);
-		setNewActivity('');
+	let addTask = (activityText: any) => {
+		setFavoritesActivityList((f) => [...f, activityText]);
 	};
 
 	let deleteTask = (index: any) => {
@@ -16,9 +15,24 @@ function FavoritesBlock() {
 		setFavoritesActivityList(updatedActivities);
 	};
 
+	useEffect(() => {
+		if (isFirstRender) {
+			setIsFirstRender(false);
+		} else {
+			localStorage.setItem('favoritesList', JSON.stringify(favoritesActivityList));
+		}
+	}, [favoritesActivityList]);
+
+	useEffect(() => {
+		let storedList = JSON.parse(localStorage.getItem('favoritesList') || '[]');
+		if (storedList) {
+			setFavoritesActivityList(storedList);
+		}
+	}, []);
+
 	return (
 		<>
-			<EnterFavoriteActivity addTask={addTask} setNewActivity={setNewActivity}></EnterFavoriteActivity>
+			<EnterFavoriteActivity addTask={addTask}></EnterFavoriteActivity>
 			<FavoritesList favoritesActivityList={favoritesActivityList} deleteTask={deleteTask}></FavoritesList>
 		</>
 	);
