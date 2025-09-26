@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function SelectActivity(props: any) {
 	let [value, setValue] = useState('');
+	let [favoritesActivityList, setFavoritesActivityList] = useState([]);
 
 	let handleChange = (e: any) => {
 		props.setIsError(2);
 		props.setSelectActivityValue(e.target.value);
 		setValue(e.target.value);
 	};
+
+	useEffect(() => {
+		let storedList = JSON.parse(localStorage.getItem('favoritesList') || '[]');
+		if (storedList) {
+			setFavoritesActivityList(storedList);
+		}
+	}, []);
 
 	return (
 		<>
@@ -22,15 +30,11 @@ function SelectActivity(props: any) {
 					<option value="" disabled>
 						Select activity...
 					</option>
-					<option value="training" className="text-[black]">
-						Go to training fydgfgdbdfbdfdfdvffdvdvdfvdfvfdfd;v;df;vfdfd;fdb;fgb;gfb;f;gpb
-					</option>
-					<option value="eat" className="text-[black]">
-						Eat
-					</option>
-					<option value="sleep" className="text-[black]">
-						Sleepg
-					</option>
+					{favoritesActivityList.map((activity: any, index: any) => (
+						<option key={index} value={activity.trim()} className="text-[black]">
+							{activity.trim()}
+						</option>
+					))}
 				</select>
 			</div>
 		</>

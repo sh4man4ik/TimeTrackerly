@@ -13,7 +13,9 @@ function FavoritesList(props: any) {
 								key={index}
 								className="flex items-center justify-between before:content-['•'] before:mr-2"
 							>
-								<span className="flex-1 mr-[6px] lg:mr-[12px] w-fit wrap-anywhere">{activity}</span>
+								<span className="flex-1 mr-[6px] lg:mr-[12px] w-fit wrap-anywhere">
+									{activity.trim()}
+								</span>
 								<div onClick={() => props.deleteTask(index)}>
 									<SmallCrossButton></SmallCrossButton>
 								</div>
