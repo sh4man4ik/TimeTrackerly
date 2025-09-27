@@ -9,11 +9,11 @@ function Cards() {
 		<>
 			<div className="mt-[45px] lg:mt-[90px] flex flex-wrap justify-self-center justify-center gap-[30px] lg:gap-[50px] w-[90%] max-w-[600px] lg:max-w-[800px] mb-[30px] lg:mb-[50px]">
 				<AboutCard
-					text="Start tracking by giving your activity a name and clicking Start"
+					text="Start tracking by giving your activity a name and clicking START"
 					logo="bi bi-speedometer"
 				></AboutCard>
 				<AboutCard
-					text="Create a list of frequent tasks so you don’t have to type them every time"
+					text="Create a list of favorite tasks so you don’t have to type them every time"
 					logo="bi bi-list-ul"
 				></AboutCard>
 				<AboutCard
