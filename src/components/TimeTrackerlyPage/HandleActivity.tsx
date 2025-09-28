@@ -4,10 +4,10 @@ import SelectActivity from '../../UI/TimeTrackerlyPage/SelectActivity';
 import Warn from '../../UI/Warn';
 import HandleButton from '../../UI/TimeTrackerlyPage/HandleButton';
 import Stopwatch from '../../UI/TimeTrackerlyPage/Stopwatch';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function HandleActivity(props: any) {
-	let [activityData, setAcivityData] = useState('');
+	let [isFirstRender, setIsFirstRender] = useState(true);
 	let [startDate, setStartDate] = useState('');
 	let [isStarted, setIsStarted] = useState(false);
 	let [isError, setIsError] = useState(2);
@@ -27,6 +27,10 @@ function HandleActivity(props: any) {
 		}
 	};
 
+	let closeActivity = () => {
+		props.setIsActivityOpen(false);
+	};
+
 	let getWarnType = (isError: any) => {
 		switch (isError) {
 			case 0:
@@ -38,18 +42,21 @@ function HandleActivity(props: any) {
 		}
 	};
 
+	useEffect(() => {
+		if (isFirstRender) {
+			setIsFirstRender(false);
+		} else {
+			localStorage.setItem('activityDataList', JSON.stringify(props.activityData));
+			props.setIsActivityOpen(false);
+		}
+	}, [props.activityData]);
+
 	let setActivityString = () => {
 		let finishDate = new Date(Date.now() - 3000).toLocaleString('en-GB');
 		let activity = enterActivityValue || selectActivityValue;
 		let activityString = startDate + ' - ' + finishDate + ' ' + activity;
 
-		console.log(activityString);
-		setAcivityData(startDate + ' - ' + finishDate);
-	};
-
-	let closeActivity = () => {
-		setActivityString();
-		props.setIsActivityOpen(false);
+		props.setActivityData((a: any) => [activityString, ...a]);
 	};
 
 	return (
@@ -84,7 +91,7 @@ function HandleActivity(props: any) {
 				) : (
 					<div className="w-full h-full">
 						<Stopwatch isStarted={isStarted}></Stopwatch>
-						<div onClick={closeActivity}>
+						<div onClick={setActivityString}>
 							<HandleButton text="STOP"></HandleButton>
 						</div>
 					</div>

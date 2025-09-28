@@ -8,6 +8,8 @@ function Activity(props: any) {
 					<HandleActivity
 						setIsActivityOpen={props.setIsActivityOpen}
 						isActivityOpen={props.isActivityOpen}
+						activityData={props.activityData}
+						setActivityData={props.setActivityData}
 					></HandleActivity>
 				</div>
 			) : (
