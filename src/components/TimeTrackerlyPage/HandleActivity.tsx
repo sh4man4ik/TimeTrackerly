@@ -7,12 +7,16 @@ import Stopwatch from '../../UI/TimeTrackerlyPage/Stopwatch';
 import { useState } from 'react';
 
 function HandleActivity(props: any) {
+	let [activityData, setAcivityData] = useState('');
+	let [startDate, setStartDate] = useState('');
 	let [isStarted, setIsStarted] = useState(false);
 	let [isError, setIsError] = useState(2);
 	let [enterActivityValue, setEnterActivityValue] = useState('');
 	let [selectActivityValue, setSelectActivityValue] = useState('');
 
 	let clickStart = () => {
+		setStartDate(new Date(Date.now() - 3000).toLocaleString('en-GB'));
+
 		if (enterActivityValue.trim() == '' && selectActivityValue.trim() == '') {
 			setIsError(0);
 		} else if (enterActivityValue.trim() != '' && selectActivityValue.trim() != '') {
@@ -34,7 +38,17 @@ function HandleActivity(props: any) {
 		}
 	};
 
+	let setActivityString = () => {
+		let finishDate = new Date(Date.now() - 3000).toLocaleString('en-GB');
+		let activity = enterActivityValue || selectActivityValue;
+		let activityString = startDate + ' - ' + finishDate + ' ' + activity;
+
+		console.log(activityString);
+		setAcivityData(startDate + ' - ' + finishDate);
+	};
+
 	let closeActivity = () => {
+		setActivityString();
 		props.setIsActivityOpen(false);
 	};
 
@@ -69,7 +83,7 @@ function HandleActivity(props: any) {
 					</div>
 				) : (
 					<div className="w-full h-full">
-						<Stopwatch isStarted={props.isStarted}></Stopwatch>
+						<Stopwatch isStarted={isStarted}></Stopwatch>
 						<div onClick={closeActivity}>
 							<HandleButton text="STOP"></HandleButton>
 						</div>

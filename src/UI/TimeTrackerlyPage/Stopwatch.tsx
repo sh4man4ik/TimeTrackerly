@@ -18,7 +18,7 @@ function Stopwatch(props: any) {
 	};
 
 	useEffect(() => {
-		if (!props.isStarted) {
+		if (props.isStarted) {
 			startTimeRef.current = Date.now() - elapsedTime;
 
 			intervalRef.current = setInterval(() => {
