@@ -12,12 +12,7 @@ function HistoryBlock(props: any) {
 
 						{props.historytype == 'full' ? (
 							<div className="grid gap-[7px] lg:gap-[15px]">
-								<p className="font-bold">17.09.2025</p>
-								<ul>
-									<li>17:30 - 22:49 full</li>
-									<li>08:00 - 10:00 full</li>
-									<li>07:00 - 08:00 full</li>
-								</ul>
+								<p className="font-bold">full...</p>
 							</div>
 						) : (
 							<></>

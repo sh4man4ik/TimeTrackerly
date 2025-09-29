@@ -8,19 +8,25 @@ function FavoritesList(props: any) {
 
 				<div className="text-base lg:text-2xl bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 rounded-[6px] lg:rounded-[12px] p-[12px] lg:p-[25px]">
 					<ul className="grid gap-[5px] lg:gap-[10px]">
-						{props.favoritesActivityList.map((activity: any, index: any) => (
-							<li
-								key={index}
-								className="flex items-center justify-between before:content-['•'] before:mr-2"
-							>
-								<span className="flex-1 mr-[6px] lg:mr-[12px] w-fit wrap-anywhere">
-									{activity.trim()}
-								</span>
-								<div onClick={() => props.deleteTask(index)}>
-									<SmallCrossButton></SmallCrossButton>
-								</div>
-							</li>
-						))}
+						{props.favoritesActivityList.length !== 0 ? (
+							<>
+								{props.favoritesActivityList.map((activity: any, index: any) => (
+									<li
+										key={index}
+										className="flex items-center justify-between before:content-['•'] before:mr-2"
+									>
+										<span className="flex-1 mr-[6px] lg:mr-[12px] w-fit wrap-anywhere">
+											{activity.trim()}
+										</span>
+										<div onClick={() => props.deleteTask(index)}>
+											<SmallCrossButton></SmallCrossButton>
+										</div>
+									</li>
+								))}
+							</>
+						) : (
+							<p>The list is empty :(</p>
+						)}
 					</ul>
 				</div>
 			</div>
