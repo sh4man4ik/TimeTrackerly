@@ -54,7 +54,16 @@ function HandleActivity(props: any) {
 	let setActivityString = () => {
 		let finishDate = new Date(Date.now() - 3000).toLocaleString('en-GB');
 		let activity = enterActivityValue || selectActivityValue;
-		let activityString = startDate + ' - ' + finishDate + ' ' + activity;
+
+		let activityString = startDate;
+
+		if (startDate.slice(0, 9) == finishDate.slice(0, 9)) {
+			activityString += ' — ' + finishDate.slice(12);
+		} else {
+			activityString += ' — ' + finishDate;
+		}
+
+		activityString += ' ' + activity;
 
 		props.setActivityData((a: any) => [activityString, ...a]);
 	};
