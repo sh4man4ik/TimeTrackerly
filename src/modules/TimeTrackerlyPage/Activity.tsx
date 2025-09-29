@@ -13,7 +13,7 @@ function Activity(props: any) {
 					></HandleActivity>
 				</div>
 			) : (
-				<div></div>
+				<></>
 			)}
 		</>
 	);

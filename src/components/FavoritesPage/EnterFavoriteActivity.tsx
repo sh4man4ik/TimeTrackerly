@@ -38,7 +38,7 @@ function EnterFavoriteActivity(props: any) {
 						<PlusButton></PlusButton>
 					</div>
 				</div>
-				{isError ? <Warn text={'Activity cannot be empty'}></Warn> : <div></div>}
+				{isError ? <Warn text={'Activity cannot be empty'}></Warn> : <></>}
 			</div>
 		</>
 	);
