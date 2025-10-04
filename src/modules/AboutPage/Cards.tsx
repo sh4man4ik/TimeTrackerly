@@ -32,7 +32,7 @@ function Cards() {
 					logo="bi bi-cpu"
 				></AboutCard>
 				<AboutCard
-					text="Your data is saved in cache, clearing it will erase your entire history"
+					text="Your data is stored in localStorage, clearing it will erase your history"
 					logo="bi bi-exclamation-octagon"
 				></AboutCard>
 				<AboutCard
