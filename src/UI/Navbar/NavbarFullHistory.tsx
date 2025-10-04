@@ -4,7 +4,7 @@ function NavbarFullHistory() {
 	const navigate = useNavigate();
 
 	let handleClick = () => {
-		navigate('/fullhistory');
+		navigate('/history');
 	};
 
 	return (

@@ -1,8 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import AboutCard from '../../components/AboutPage/AboutCard';
 
 function Cards() {
 	let openGitHubRepo = () => {
 		window.open('https://github.com/sh4man4ik/TimeTrackerly', '_blank');
+	};
+
+	const navigate = useNavigate();
+
+	let openPrivacyPolicy = () => {
+		navigate('/privacy');
+	};
+
+	let openTelegramForHelp = () => {
+		window.open('https://t.me/sh4man4ikk', '_blank');
 	};
 
 	return (
@@ -27,7 +38,17 @@ function Cards() {
 				<AboutCard
 					text="The project code is open and available for everyone (click me)"
 					logo="bi bi-github"
-					openGitHubRepoFunction={openGitHubRepo}
+					cardFunction={openGitHubRepo}
+				></AboutCard>
+				<AboutCard
+					text="Check how we protect your privacy in our policy (click me)"
+					logo="bi bi-shield-check"
+					cardFunction={openPrivacyPolicy}
+				></AboutCard>
+				<AboutCard
+					text="For quick help you can contact us directly via Telegram (click me)"
+					logo="bi bi-chat"
+					cardFunction={openTelegramForHelp}
 				></AboutCard>
 			</div>
 		</>
