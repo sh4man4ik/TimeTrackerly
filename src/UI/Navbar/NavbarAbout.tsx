@@ -10,7 +10,7 @@ function NavbarAbout() {
 	return (
 		<>
 			<div
-				className="text-xl lg:text-4xl mb-[4px] lg:mb-[0px] cursor-pointer w-fit hover:underline hover:underline-offset-3 text-black"
+				className="text-xl lg:text-4xl mb-[4px] lg:mb-[0px] cursor-pointer w-fit lg:hover:underline active:underline underline-offset-3 text-black"
 				onClick={handleClick}
 			>
 				About

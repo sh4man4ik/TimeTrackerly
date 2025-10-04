@@ -9,7 +9,7 @@ function NavbarTitle() {
 	return (
 		<>
 			<p
-				className="text-xl lg:text-4xl font-bold cursor-pointer hover:underline hover:underline-offset-3 text-black"
+				className="text-xl lg:text-4xl font-bold cursor-pointer lg:hover:underline active:underline underline-offset-3 text-black"
 				onClick={handleClick}
 			>
 				TimeTrackerly

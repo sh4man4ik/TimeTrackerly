@@ -6,7 +6,7 @@ function AboutTitle() {
 					Stop{' '}
 				</span>
 				Wondering Where Your{' '}
-				<span className="font-bold  bg-gradient-to-r from-[#7474BF] to-[#348AC7] text-transparent bg-clip-text">
+				<span className="font-bold bg-gradient-to-r from-[#7474BF] to-[#348AC7] text-transparent bg-clip-text">
 					Time{' '}
 				</span>
 				Goes
