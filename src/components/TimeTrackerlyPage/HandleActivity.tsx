@@ -15,7 +15,7 @@ function HandleActivity(props: any) {
 	let [selectActivityValue, setSelectActivityValue] = useState('');
 
 	let clickStart = () => {
-		setStartDate(new Date(Date.now() - 3000).toLocaleString('en-GB'));
+		setStartDate(new Date(Date.now() - 3000).toLocaleString('en-CA', { hour12: false }));
 
 		if (enterActivityValue.trim() == '' && selectActivityValue.trim() == '') {
 			setIsError(0);
@@ -52,7 +52,7 @@ function HandleActivity(props: any) {
 	}, [props.activityData]);
 
 	let setActivityString = () => {
-		let finishDate = new Date(Date.now() - 3000).toLocaleString('en-GB');
+		let finishDate = new Date(Date.now() - 3000).toLocaleString('en-CA', { hour12: false });
 		let activity = enterActivityValue || selectActivityValue;
 
 		let activityString = startDate;
