@@ -7,7 +7,7 @@ function FavoritesBlock() {
 	let [isFirstRender, setIsFirstRender] = useState(true);
 
 	let addTask = (activityText: any) => {
-		setFavoritesActivityList((f) => [...f, activityText]);
+		setFavoritesActivityList((f) => [activityText, ...f]);
 	};
 
 	let deleteTask = (index: any) => {
