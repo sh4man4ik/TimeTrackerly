@@ -9,13 +9,13 @@ function HistoryBlock(props: any) {
 			setNewActivityDataList(props.activityData);
 		} else {
 			if (props.activityData[0]) {
-				let lastActivityElement = props.activityData[0].slice(0, 10);
-				let lastActivityDate = Date.parse(lastActivityElement);
+				let dateNow = new Date();
+				let formatDateNow = Date.parse(dateNow.toISOString().split('T')[0]);
 
 				let newActivityDataList = props.activityData.filter((activity: any) => {
 					let activityDate = Date.parse(activity.slice(0, 10));
 
-					return lastActivityDate - activityDate < 604800000; //604800000 seven days in ms
+					return formatDateNow - activityDate < 604800000; //604800000 seven days in ms
 				});
 
 				setNewActivityDataList(newActivityDataList);
