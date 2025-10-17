@@ -17,7 +17,7 @@ function About() {
 			<Navbar></Navbar>
 			<AboutTitle></AboutTitle>
 			<Cards></Cards>
-			<div className={`lg:block hidden mb-[30px] lg:mb-[50px] justify-self-center w-[${adWidth}px]`}>
+			<div className={`lg:block hidden mb-[30px] lg:mb-[50px] justify-self-center`} style={{ width: adWidth }}>
 				<NativeBanner3></NativeBanner3>
 			</div>
 			<div className="lg:hidden block mb-[30px] mt-[45px] lg:mt-[90px] lg:mb-[50px] justify-self-center">

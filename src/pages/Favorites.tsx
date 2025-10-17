@@ -15,11 +15,11 @@ function Favorites() {
 		<>
 			<Navbar></Navbar>
 			<FavoritesBlock></FavoritesBlock>
-			<div className={`lg:block hidden mb-[30px] lg:mb-[50px] w-[${adWidth}px] justify-self-center`}>
+			<div className={`lg:block hidden mb-[30px] lg:mb-[50px] justify-self-center`} style={{ width: adWidth }}>
 				<NativeBanner3></NativeBanner3>
 			</div>
 			<div className="lg:hidden block mt-[45px] lg:mt-[90px] mb-[30px] lg:mb-[50px] justify-self-center">
-				<div style={{ zoom: 0.6 }}>
+				<div style={{ zoom: 0.65 }}>
 					<AdBanner300x250></AdBanner300x250>
 				</div>
 			</div>
