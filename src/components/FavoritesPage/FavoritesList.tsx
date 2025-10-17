@@ -3,7 +3,7 @@ import SmallCrossButton from '../../UI/FavoritesPage/SmallCrossButton';
 function FavoritesList(props: any) {
 	return (
 		<>
-			<div className="justify-self-center mt-[45px] lg:mt-[90px] mb-[30px] lg:mb-[50px] w-[80%] max-w-[400px] lg:w-[100%] lg:max-w-[700px]">
+			<div className="justify-self-center mt-[45px] lg:mt-[90px] w-[80%] max-w-[400px] lg:w-[100%] lg:max-w-[700px]">
 				<p className="font-bold text-xl lg:text-4xl text-center pb-[6px] lg:pb-[12px]">Full list</p>
 
 				<div className="text-base lg:text-2xl bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 rounded-[6px] lg:rounded-[12px] p-[12px] lg:p-[25px]">

@@ -18,7 +18,7 @@ function Cards() {
 
 	return (
 		<>
-			<div className="mt-[45px] lg:mt-[90px] flex flex-wrap justify-self-center justify-center gap-[30px] lg:gap-[50px] w-[90%] max-w-[600px] lg:max-w-[800px] mb-[30px] lg:mb-[50px]">
+			<div className="mt-[45px] lg:mt-[90px] flex flex-wrap justify-self-center justify-center gap-[30px] lg:gap-[50px] w-[90%] max-w-[600px] lg:max-w-[800px]">
 				<AboutCard
 					text="Start tracking by giving your activity a name and clicking START"
 					logo="bi bi-speedometer"
