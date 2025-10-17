@@ -14,7 +14,7 @@ function HandleActivity(props: any) {
 	let [isError, setIsError] = useState(2);
 	let [enterActivityValue, setEnterActivityValue] = useState('');
 	let [selectActivityValue, setSelectActivityValue] = useState('');
-	let [zoom, setZoom] = useState(window.innerWidth < 1024 ? 0.3 : 1);
+	let [zoom, setZoom] = useState(0);
 
 	let clickStart = () => {
 		setStartDate(new Date(Date.now() - 3000).toLocaleString('en-CA', { hour12: false }));
@@ -43,6 +43,10 @@ function HandleActivity(props: any) {
 				return <div></div>;
 		}
 	};
+
+	useEffect(() => {
+		setZoom(window.innerWidth < 1024 ? 0.3 : 1);
+	}, []);
 
 	useEffect(() => {
 		if (isFirstRender) {
