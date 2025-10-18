@@ -41,6 +41,6 @@ Icons_ and _Google Fonts_.
 # Facts about the website
 
 - You can make a list of **favorite activities** so you don't have to write them down manually all the time
-- The data is **stored in the cache**, clearing it will erase your entire history
+- The data is **stored in the localStorage**, clearing it will erase your entire history
 - Google Analytics is used to view **stats**
 - The website is **responsive**
