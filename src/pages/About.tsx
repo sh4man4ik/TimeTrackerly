@@ -1,5 +1,5 @@
 import Navbar from '../modules/Navbar/Navbar';
-import AboutTitle from '../UI/AboutPage/AboutTitle';
+import AboutTitle from '../ui/AboutPage/AboutTitle';
 import Cards from '../modules/AboutPage/Cards';
 import NativeBanner3 from '../components/Ads/NativeBanner3';
 import AdBanner300x250 from '../components/Ads/AdBanner300x250';

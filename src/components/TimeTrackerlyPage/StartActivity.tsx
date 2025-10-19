@@ -1,5 +1,5 @@
-import StartActivityTitle from '../../UI/TimeTrackerlyPage/StartActivityTitle';
-import PlusButton from '../../UI/PlusButton';
+import StartActivityTitle from '../../ui/TimeTrackerlyPage/StartActivityTitle';
+import PlusButton from '../../ui/PlusButton';
 
 function StartActivity(props: any) {
 	let openActivity = () => {

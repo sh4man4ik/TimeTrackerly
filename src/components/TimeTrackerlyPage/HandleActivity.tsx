@@ -1,9 +1,9 @@
-import CrossButton from '../../UI/CrossButton';
-import EnterActivity from '../../UI/TimeTrackerlyPage/EnterActivity';
-import SelectActivity from '../../UI/TimeTrackerlyPage/SelectActivity';
-import Warn from '../../UI/Warn';
-import HandleButton from '../../UI/TimeTrackerlyPage/HandleButton';
-import Stopwatch from '../../UI/TimeTrackerlyPage/Stopwatch';
+import CrossButton from '../../ui/CrossButton';
+import EnterActivity from '../../ui/TimeTrackerlyPage/EnterActivity';
+import SelectActivity from '../../ui/TimeTrackerlyPage/SelectActivity';
+import Warn from '../../ui/Warn';
+import HandleButton from '../../ui/TimeTrackerlyPage/HandleButton';
+import Stopwatch from '../../ui/TimeTrackerlyPage/Stopwatch';
 import AdBanner468x60 from '../Ads/AdBanner468x60';
 import { useState, useEffect } from 'react';
 

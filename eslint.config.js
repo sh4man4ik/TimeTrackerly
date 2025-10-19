@@ -21,7 +21,6 @@ export default defineConfig([
 			}
 		},
 		rules: {
-			semi: ['error', 'always'],
 			'no-unused-vars': 'off',
 			'no-undef': 'warn',
 			'prefer-const': 'off'

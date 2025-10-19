@@ -1,4 +1,4 @@
-import SmallCrossButton from '../../UI/FavoritesPage/SmallCrossButton';
+import SmallCrossButton from '../../ui/FavoritesPage/SmallCrossButton';
 
 function FavoritesList(props: any) {
 	return (
