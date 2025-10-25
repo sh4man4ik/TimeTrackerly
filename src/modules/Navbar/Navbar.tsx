@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import NavbarTitle from '../../ui/Navbar/NavbarTitle';
+import NavbarTitle from '../../UIFIX/Navbar/NavbarTitle';
 import NavbarItems from '../../components/Navbar/NavbarItems';
-import NavbarButton from '../../ui/Navbar/NavbarButton';
+import NavbarButton from '../../UIFIX/Navbar/NavbarButton';
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);

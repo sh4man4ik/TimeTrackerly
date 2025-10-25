@@ -1,5 +1,5 @@
-import HistoryTitle from '../../ui/HistoryTitle';
-import HistoryBlock from '../../ui/HistoryBlock';
+import HistoryTitle from '../../UIFIX/HistoryTitle';
+import HistoryBlock from '../../UIFIX/HistoryBlock';
 
 function SevenDaysHistory(props: any) {
 	return (

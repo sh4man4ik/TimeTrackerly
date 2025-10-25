@@ -1,9 +1,9 @@
-import CrossButton from '../../ui/CrossButton';
-import EnterActivity from '../../ui/TimeTrackerlyPage/EnterActivity';
-import SelectActivity from '../../ui/TimeTrackerlyPage/SelectActivity';
-import Warn from '../../ui/Warn';
-import HandleButton from '../../ui/TimeTrackerlyPage/HandleButton';
-import Stopwatch from '../../ui/TimeTrackerlyPage/Stopwatch';
+import CrossButton from '../../UIFIX/CrossButton';
+import EnterActivity from '../../UIFIX/TimeTrackerlyPage/EnterActivity';
+import SelectActivity from '../../UIFIX/TimeTrackerlyPage/SelectActivity';
+import Warn from '../../UIFIX/Warn';
+import HandleButton from '../../UIFIX/TimeTrackerlyPage/HandleButton';
+import Stopwatch from '../../UIFIX/TimeTrackerlyPage/Stopwatch';
 import { useState, useEffect } from 'react';
 
 function HandleActivity(props: any) {

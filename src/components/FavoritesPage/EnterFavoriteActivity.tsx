@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import PlusButton from '../../ui/PlusButton';
-import Warn from '../../ui/Warn';
+import PlusButton from '../../UIFIX/PlusButton';
+import Warn from '../../UIFIX/Warn';
 
 function EnterFavoriteActivity(props: any) {
 	let [isError, setIsError] = useState(false);
