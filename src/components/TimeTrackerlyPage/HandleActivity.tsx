@@ -4,7 +4,6 @@ import SelectActivity from '../../ui/TimeTrackerlyPage/SelectActivity';
 import Warn from '../../ui/Warn';
 import HandleButton from '../../ui/TimeTrackerlyPage/HandleButton';
 import Stopwatch from '../../ui/TimeTrackerlyPage/Stopwatch';
-import AdBanner468x60 from '../Ads/AdBanner468x60';
 import { useState, useEffect } from 'react';
 
 function HandleActivity(props: any) {
@@ -14,7 +13,6 @@ function HandleActivity(props: any) {
 	let [isError, setIsError] = useState(2);
 	let [enterActivityValue, setEnterActivityValue] = useState('');
 	let [selectActivityValue, setSelectActivityValue] = useState('');
-	let [zoom, setZoom] = useState(0);
 
 	let clickStart = () => {
 		setStartDate(new Date(Date.now() - 3000).toLocaleString('en-CA', { hour12: false }));
@@ -43,10 +41,6 @@ function HandleActivity(props: any) {
 				return <div></div>;
 		}
 	};
-
-	useEffect(() => {
-		setZoom(window.innerWidth < 1024 ? 0.3 : 1);
-	}, []);
 
 	useEffect(() => {
 		if (isFirstRender) {
@@ -106,11 +100,6 @@ function HandleActivity(props: any) {
 				) : (
 					<div className="w-full h-full">
 						<Stopwatch isStarted={isStarted}></Stopwatch>
-						<div className="mt-[5px]">
-							<div style={{ zoom: zoom }}>
-								<AdBanner468x60></AdBanner468x60>
-							</div>
-						</div>
 						<div onClick={setActivityString}>
 							<HandleButton text="STOP"></HandleButton>
 						</div>
