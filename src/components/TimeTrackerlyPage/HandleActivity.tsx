@@ -79,9 +79,7 @@ function HandleActivity(props: any) {
 								setEnterActivityValue={setEnterActivityValue}
 								setIsError={setIsError}
 							></EnterActivity>
-							<p className="text-xl lg:text-4xl text-center mt-[20px] lg:mt-[40px] mb-[20px] lg:mb-[40px]">
-								or
-							</p>
+							<p className="font-medium text-center mt-[20px] lg:mt-[40px] mb-[20px] lg:mb-[40px]">or</p>
 							<SelectActivity
 								setSelectActivityValue={setSelectActivityValue}
 								setIsError={setIsError}

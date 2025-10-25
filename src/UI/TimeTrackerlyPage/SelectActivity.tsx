@@ -19,7 +19,7 @@ function SelectActivity(props: any) {
 
 	return (
 		<>
-			<div className="grid text-xl lg:text-4xl">
+			<div className="grid font-medium">
 				<p className="pb-[6px] lg:pb-[12px]">Select activity</p>
 
 				<select

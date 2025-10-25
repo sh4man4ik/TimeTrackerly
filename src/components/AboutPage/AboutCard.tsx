@@ -7,7 +7,7 @@ function AboutCard(props: any) {
 			>
 				<div className="grid">
 					<i className={`${props.logo} text-[30px] lg:text-[46px]`}></i>
-					<p className="text-base lg:text-2xl">{props.text}</p>
+					<p className="font-small">{props.text}</p>
 				</div>
 			</div>
 		</>

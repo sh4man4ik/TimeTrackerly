@@ -1,7 +1,7 @@
 function StartActivityTitle() {
 	return (
 		<>
-			<p className="text-3xl lg:text-6xl font-bold">START ACTIVITY</p>
+			<p className="font-large font-bold">START ACTIVITY</p>
 		</>
 	);
 }

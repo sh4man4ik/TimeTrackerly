@@ -6,7 +6,7 @@ function EnterActivity(props: any) {
 
 	return (
 		<>
-			<div className="grid text-xl lg:text-4xl">
+			<div className="grid font-medium">
 				<p className="pb-[6px] lg:pb-[12px]">Enter activity</p>
 				<input
 					type="text"

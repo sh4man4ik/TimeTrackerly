@@ -35,7 +35,7 @@ function Stopwatch(props: any) {
 
 	return (
 		<>
-			<p className="font-bold text-4xl lg:text-9xl text-center">{formatTime()}</p>
+			<p className="font-bold font-large text-center">{formatTime()}</p>
 		</>
 	);
 }
