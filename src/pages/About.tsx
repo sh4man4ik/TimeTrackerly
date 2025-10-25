@@ -1,5 +1,5 @@
 import Navbar from '../modules/Navbar/Navbar';
-import AboutTitle from '../UIFIX/AboutPage/AboutTitle';
+import AboutTitle from '../ui/AboutPage/AboutTitle';
 import Cards from '../modules/AboutPage/Cards';
 
 function About() {

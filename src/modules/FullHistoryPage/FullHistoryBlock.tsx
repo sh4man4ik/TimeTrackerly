@@ -1,5 +1,5 @@
-import HistoryTitle from '../../UIFIX/HistoryTitle';
-import HistoryBlock from '../../UIFIX/HistoryBlock';
+import HistoryTitle from '../../ui/HistoryTitle';
+import HistoryBlock from '../../ui/HistoryBlock';
 
 function FullHistoryBlock(props: any) {
 	return (
