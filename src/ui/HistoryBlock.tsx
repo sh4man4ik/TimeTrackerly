@@ -34,7 +34,7 @@ function HistoryBlock(props: any) {
 					<>
 						{newActivityDataList.map((activity: any, index: any) => (
 							<div key={index}>
-								<p>{activity.trim()}</p>
+								<p className="wrap-anywhere">{activity.trim()}</p>
 							</div>
 						))}
 					</>

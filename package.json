@@ -6,8 +6,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
-		"lint": "eslint .",
-		"check": "eslint . && tsc -b --force",
+		"lintCheck": "eslint .",
+		"tsCheck": "tsc --build",
+		"check": "eslint . && tsc --build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -22,6 +23,7 @@
 		"@types/react": "^19.1.10",
 		"@types/react-dom": "^19.1.7",
 		"@vitejs/plugin-react": "^5.0.0",
+		"baseline-browser-mapping": "^2.9.6",
 		"eslint": "^9.35.0",
 		"eslint-plugin-react-hooks": "^5.2.0",
 		"eslint-plugin-react-refresh": "^0.4.20",
