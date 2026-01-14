@@ -9,34 +9,34 @@ The website can be accessed at https://timetrackerly.netlify.app
 
 # Source Code
 
-Clone the repository:
+1. Clone the repository:
 
 ```
 git clone https://github.com/sh4man4ik/TimeTrackerly.git
 ```
 
-Go to the directory:
+2. Go to the directory:
 
 ```
 cd TimeTrackerly
 ```
 
-Download the dependencies:
+3. Download the dependencies:
 
 ```
 npm install
 ```
 
-Launch the website:
+4. Launch the website:
 
 ```
 npm run dev
 ```
 
-# Technology
+# Tech stack
 
-The following technologies are used to develop the website: _TypeScript_, _React_, _Tailwind CSS_, _Vite_, _Bootstrap
-Icons_ and _Google Fonts_.
+The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **Vite**,
+**Node.js**, **Bootstrap Icons** and **Google Fonts**.
 
 # Facts about the website
 
