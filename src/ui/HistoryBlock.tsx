@@ -29,7 +29,7 @@ function HistoryBlock(props: any) {
 
 	return (
 		<>
-			<div className="font-small p-[12px] lg:p-[25px] bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 rounded-[6px] lg:rounded-[12px] mt-[17px] lg:mt-[35px] max-w-[450px] lg:max-w-[900px] w-[90%] h-auto justify-self-center grid gap-[7px] lg:gap-[15px] mb-[30px] lg:mb-[50px]">
+			<div className="bg-[#e6e6ed] font-small p-[12px] lg:p-[25px] rounded-[6px] lg:rounded-[12px] mt-[17px] lg:mt-[35px] max-w-[450px] lg:max-w-[900px] w-[90%] h-auto justify-self-center grid gap-[7px] lg:gap-[15px] mb-[30px] lg:mb-[50px]">
 				{newActivityDataList.length !== 0 ? (
 					<>
 						{newActivityDataList.map((activity: any, index: any) => (

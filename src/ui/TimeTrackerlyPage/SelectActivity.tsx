@@ -23,15 +23,15 @@ function SelectActivity(props: any) {
 				<p className="pb-[6px] lg:pb-[12px]">Select activity</p>
 
 				<select
-					className={`appearance-none rounded-[6px] lg:rounded-[12px] bg-gradient-to-r from-[#7474BF] to-[#348AC7] w-[100%] lg:max-w-[500px] p-[2px] lg:p-[4px] pl-[8px] lg:pl-[16px] pr-[8px] lg:pr-[16px] truncate outline-none lg:hover:from-[#6b6bb0] lg:hover:to-[#3180b0] focus:from-[#6b6bb0] focus:to-[#3180b0] cursor-pointer ${value == '' ? 'text-[#D1D5DB]' : 'text-[#F8F8FF]'}`}
+					className={`appearance-none rounded-[6px] lg:rounded-[12px] bg-[#d5d5db] lg:hover:bg-[#d2d2d9] w-[100%] lg:max-w-[500px] p-[2px] lg:p-[4px] pl-[8px] lg:pl-[16px] pr-[8px] lg:pr-[16px] truncate outline-none cursor-pointer ${value == '' ? 'text-[#8a8a8a]' : 'text-[#1A1A1A]'}`}
 					onChange={(e) => handleChange(e)}
 					value={value}
 				>
-					<option value="" disabled>
+					<option className="text-[black] bg-[#d5d5db]" value="" disabled>
 						Select activity...
 					</option>
 					{favoritesActivityList.map((activity: any, index: any) => (
-						<option key={index} value={activity.trim()} className="text-[black]">
+						<option key={index} value={activity.trim()} className="text-[#1A1A1A]  bg-[#d5d5db]">
 							{activity.trim()}
 						</option>
 					))}

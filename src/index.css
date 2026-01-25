@@ -6,6 +6,13 @@
 	font-style: normal;
 }
 
+/*
+bg-[#1A1A1A] lg:hover:bg-[#000000] active:bg-[#000000]
+bg-[#e6e6ed]
+bg-[#d5d5db] lg:hover:bg-[#d2d2d9]
+text-[#1A1A1A] placeholder-[#8a8a8a]
+*/
+
 body {
 	user-select: none;
 	margin: 0;

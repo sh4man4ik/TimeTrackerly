@@ -6,7 +6,7 @@ function FavoritesList(props: any) {
 			<div className="justify-self-center mt-[45px] lg:mt-[90px] w-[80%] max-w-[400px] lg:w-[100%] lg:max-w-[700px] mb-[30px] lg:mb-[50px]">
 				<p className="font-bold font-medium text-center pb-[6px] lg:pb-[12px]">Full list</p>
 
-				<div className="font-small bg-gradient-to-r from-[#7474BF]/20 to-[#348AC7]/20 rounded-[6px] lg:rounded-[12px] p-[12px] lg:p-[25px]">
+				<div className="font-small bg-[#e6e6ed] rounded-[6px] lg:rounded-[12px] p-[12px] lg:p-[25px]">
 					<ul className="grid gap-[5px] lg:gap-[10px]">
 						{props.favoritesActivityList.length !== 0 ? (
 							<>
