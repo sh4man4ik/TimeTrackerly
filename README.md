@@ -5,7 +5,7 @@ finished your activity, press STOP, and the activity will be saved in your histo
 
 # Quick Start
 
-The website can be accessed at https://timetrackerly.netlify.app
+The website can be accessed at https://timetrackerly.vercel.app
 
 # Source Code
 
