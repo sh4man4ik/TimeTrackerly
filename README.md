@@ -1,3 +1,7 @@
+# TimeTrackerly
+
+The project was completed as part of the Practical Project (UPT) at Jõhvi Upper Secondary School (Jõhvi Gümnaasium).
+
 # What is it?
 
 TimeTrackerly is a website for **tracking activities**. Just give your activity a name and press START. Once you have
@@ -11,25 +15,25 @@ The website can be accessed at https://timetrackerly.vercel.app
 
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/sh4man4ik/TimeTrackerly.git
 ```
 
 2. Go to the directory:
 
-```
+```bash
 cd TimeTrackerly
 ```
 
 3. Download the dependencies:
 
-```
+```bash
 npm install
 ```
 
 4. Launch the website:
 
-```
+```bash
 npm run dev
 ```
 
