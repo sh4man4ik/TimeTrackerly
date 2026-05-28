@@ -10,5 +10,13 @@
 	"proseWrap": "always",
 	"trailingComma": "none",
 	"bracketSameLine": false,
-	"quoteProps": "as-needed"
+	"quoteProps": "as-needed",
+	"overrides": [
+		{
+			"files": "*.md",
+			"options": {
+				"proseWrap": "preserve"
+			}
+		}
+	]
 }

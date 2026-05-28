@@ -4,8 +4,7 @@ The project was completed as part of the Practical Project (UPT) at Jõhvi Upper
 
 # What is it?
 
-TimeTrackerly is a website for **tracking activities**. Just give your activity a name and press START. Once you have
-finished your activity, press STOP, and the activity will be saved in your history.
+TimeTrackerly is a website for **tracking activities**. Just give your activity a name and press START. Once you have finished your activity, press STOP, and the activity will be saved in your history.
 
 # Quick Start
 
@@ -39,8 +38,7 @@ npm run dev
 
 # Tech stack
 
-The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **Vite**,
-**Node.js**, **Bootstrap Icons** and **Google Fonts**.
+The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **Vite**, **Node.js**, **Bootstrap Icons** and **Google Fonts**.
 
 # Facts about the website
 
